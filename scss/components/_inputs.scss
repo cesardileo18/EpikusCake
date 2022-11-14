@@ -1,0 +1,25 @@
+/* Input */
+.fa-solid.fa-magnifying-glass{
+    margin-left: 15px;
+}
+div.input__search{
+    border: 1px solid #ced4da;
+}
+div.input__search:focus-within{
+    border: 1px solid #fc0da045 !important;
+} 
+input.form-control{
+    border: none;
+    transition: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+textarea#exampleFormControlTextarea1.form-control{
+    transition: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+textarea#exampleFormControlTextarea1.form-control:focus-within{
+    border: 1px solid #fc0da045 !important;
+} 
+/*Fin Input */

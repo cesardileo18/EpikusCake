@@ -1,0 +1,116 @@
+/* Footer */
+footer{
+    div.footer__desktop{
+        height: 100%;
+        background-color: $color-primario-nav-footer;
+        .footer__desktop__redesSociales__Instagram{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: linear-gradient(#405DE6, #5B51D8, #833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+            margin: 0px 10px 0px 10px;
+        }
+        .footer__desktop__redesSociales__Email{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-color: rgb(135, 131, 131);
+            margin: 0px 10px 0px 10px;
+        }
+        .footer__desktop__redesSociales__Whatsapp{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-color: #25D366 !important;
+            margin: 0px 10px 0px 10px;
+        }
+        .footer__desktop__img{
+            color:  $color-secundario;
+            font-size: 30px;
+        }
+        .fa-brands.fa-whatsapp{
+            font-size: 30px !important;
+            color:  $color-secundario !important;
+        }
+        section.footer__desktop__horarios.d-flex.flex-column.align-items-center.p-3{
+            h5{
+                line-height: 0.50rem;
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+    }
+    div.footer__responsive{
+        display: none !important;
+    }
+}
+/*Fin Footer */
+
+/* MediasQuery */
+@media screen and (max-width: 1076px){
+    footer{
+        div.footer__desktop.d-flex.align-items-center.justify-content-evenly{
+            h5{
+                font-size: 1rem !important;
+            }
+            h6{
+                font-size: 0.8rem !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 930px){
+    footer{
+        div.footer__desktop.d-flex.align-items-center.justify-content-evenly{
+            h5{
+                font-size: 0.8rem !important;
+            }
+            h6{
+                font-size: 0.6rem !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 799px){
+    footer{
+        div.footer__desktop.d-flex.align-items-center.justify-content-evenly{
+            h6{
+                font-size: 0.49rem !important;
+            }
+        }
+    }
+}
+/*Cuando entra en modo Celular*/
+@media screen and (max-width: 767px){
+    footer{
+        div.footer__desktop.d-flex.align-items-center.justify-content-evenly{
+            display: none !important;
+        }
+        div.footer__responsive{
+            background-color:  $color-primario-nav-footer;
+            display: flex !important;
+            div.footer__responsive__carrito{
+                background-color: #f112bd;
+                h5{
+                    color: #fffeff;
+                    margin-bottom: 0px !important;
+                }
+                i.fa-solid.fa-cart-arrow-down{
+                    margin-right: 0px;
+                    color:  $color-secundario;
+                }
+            }
+        }
+    }
+    /*Fin Footer */
+} 
+/*Fin MediasQuery */

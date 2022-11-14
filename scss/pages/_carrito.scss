@@ -1,0 +1,82 @@
+/* Carrito */
+main{
+    div.container-fluid{
+        section.carrito{
+            div.page-header.my-3{
+                div.padreCarrito{
+                    div.padreCarrito__inputs{
+                        h6{
+                            margin-bottom: 0px !important;
+                        }
+                        div.carrito__inputs{
+                            background-color: #f5a7c12e !important;
+                            height: 35px !important;
+                        }
+                    } 
+                }
+                section.direccion{
+                    div.carrito__inputs{
+                        background-color: #f5a7c12e !important;
+                        height: 35px !important;
+                    }
+                }
+            }
+            section.direccion{
+                div.direccion__padre{
+                    background-color: #f5a7c12e;
+                    h6{
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+        }
+        section.formulario{
+            div.page-header.mx-2.carrito__lista{
+                background-color: #f5a7c12e;
+                overflow-y: auto;
+                overflow-x: auto;
+            }
+            div.carrito__buttonLista.d-flex.justify-content-end{
+                display: none !important;
+            }
+        }
+    }
+}
+/*Fin Carrito */
+
+/* MediasQuery */
+/*Cuando entra en modo Celular*/
+@media screen and (max-width: 767px){
+    main{
+        div.container-fluid{
+            section.direccion{
+                div.carrito__buttonDireccion{
+                    display: none !important;
+                }
+            }
+            section.formulario.col-lg-4.col-md-5.my-lg-2.my-md-2.mb-sm-5.mb-5{
+                div.carrito__buttonLista{
+                    display: flex !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 630px){
+    main{
+        div.container-fluid{
+            section.carrito{
+                div.page-header.my-3{
+                    div.padreCarrito{
+                        div.padreCarrito__inputs{
+                            h6{
+                                font-size: 0.8rem;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+/*Fin MediasQuery */

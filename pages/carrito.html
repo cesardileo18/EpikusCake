@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Nuestro carrito de compras, donde podras ingresar tu dirección para relizar 
+    el envío a tu domicilio, y tendras un breve descripción de tu pedido">
+    <!-- Incorporo iconos mediante fontawesome, para respetar el diseño de figma -->
+    <link rel="stylesheet" href="../iconos/fontawesome/css/all.min.css">
+    <!-- Incorporo bootstrap-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Carrito de Compras | Epikus Cake</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logosEpikus/iconEpikus.ico">
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light px-2">
+            <div class="container-fluid navbar__desktop">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <img src="../img/logosEpikus/epikusFondoBlanco100X100.png" class="header__logo" alt="Logo Epikus Cake">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>Epikus Cake</strong></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-md-evenly">
+                        <div class="offcanvas-body-padreNav">
+                            <ul class="navbar-nav flex-grow-1 pe-3 gap-md-5">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html"><i
+                                            class="fa-solid fa-house mx-2 nav__iconResponsive"></i>Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-basket-shopping mx-2 nav__iconResponsive"></i>Productos
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="./pasteleria.html"><i
+                                                    class="fa-solid fa-cookie-bite mx-2"></i>Pastelería</a></li>
+                                        <li><a class="dropdown-item" href="./tortas.html"><i
+                                                    class="fa-solid fa-cake-candles mx-2"></i>Tortas</a></li>
+                                        <li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./nosotros.html"><i
+                                            class="fa-solid fa-users mx-2 nav__iconResponsive"></i>Nosotros</a>
+                                </li>
+                                <li class="nav-item nav__contacto">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item nav__info">
+                                    <a class="nav-link" href="./informacion.html"><i
+                                            class="fa-solid fa-circle-info mx-2 nav__iconResponsive"></i>Información</a>
+                                </li>
+                            </ul>
+                            <div class="footer_responsive">
+                                <h5><strong>Redes Sociales</strong></h5>
+                                <div class="footer__redesSocialesInstagram">
+                                    <a href="https://instagram.com/epikuscake?igshid=YmMyMTA2M2Y=" target="blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <hr />
+                                <h5 className='mt-4'><strong>Contacto</strong></h5>
+                                <div class="footer__padre d-flex gap-1">
+                                    <div class="footer__redesSocialesEmail">
+                                        <a href="./contacto.html"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="footer__redesSocialesWhatsapp">
+                                        <a href="https://api.whatsapp.com/send?phone=541125944586&text=Hola te escribo desde tu web"
+                                            target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="icono__carrito" href="./carrito.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            <div class="container-fluid responsive">
+                <a href="../index.html"><i class="fa-solid fa-circle-left icono__carrito__atras"></i></a>
+                <img src="../img/logosEpikus/epikusFondoBlanco100X100.png" class="header__logo" alt="Logo Epikus Cake">
+            </div>
+        </nav>
+    </header>
+    <main class="d-flex flex-column">
+        <div class="container-fluid">
+            <div class="row">
+                <section class="carrito col-lg-8 col-md-7">
+                    <div class="page-header my-3">
+                        <div class="contenedor__texto__carrito mx-lg-4 mx-md-4 d-flex justify-content-sm-center justify-content-center justify-content-lg-between">
+                            <h1>Carrito de Compras</h1>
+                        </div>
+                        <div class="padreCarrito my-4 col-lg-12 col-md-12">
+                            <div class="padreCarrito__inputs d-flex justify-content-lg-evenly justify-content-sm-evenly justify-content-evenly col-12">
+                                    <div class="carrito__inputs d-flex justify-content-center align-items-center rounded-4 col-3 col-md-3 col-lg-3 mx-1">
+                                        <h6 class="text-center">Dirección de entrega</h6> 
+                                    </div>
+                                    <div class="carrito__inputs d-flex justify-content-center align-items-center rounded-4 col-3 col-md-3 col-lg-3 mx-1">
+                                        <h6 class="text-center">Forma de Pago</h6> 
+                                    </div>
+                                    <div class="carrito__inputs d-flex justify-content-center align-items-center rounded-4 col-3 col-md-3 col-lg-3 mx-1">
+                                        <h6 class="text-center">¡Último Paso!</h6> 
+                                    </div>
+                            </div>
+                        </div>
+                        <section class="direccion col-12">
+                            <div class="direccion__padre mx-lg-4 p-3 rounded-4">
+                                <div class="direccion__carrito d-flex mx-lg-3 my-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <h6 class="mx-2"><strong>Usuario</strong> Humberto Primo 3076</h6>
+                                </div>
+                                <div class="carrito__inputs d-flex justify-content-center align-items-center rounded-4 mx-lg-3 my-5 col-5 col-lg-3 col-sm-4">
+                                    <h6>Agregar Nueva</h6> 
+                                </div>
+                            </div>
+                            <div class="carrito__buttonDireccion d-flex justify-content-end">
+                                <button class="btn my-2 mx-4">Continuar</button>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="formulario col-lg-4 col-md-5 my-lg-2 my-md-2 mb-sm-5 mb-5">
+                    <h2 class="my-lg-5 my-md-5 text-center my-sm-5 my-xs-5">Tu pedido</h2>
+                    <div class="page-header mx-2 carrito__lista rounded-4 mb-lg-4 mb-md-4">
+                        <div class="carrito__lista__contenedorImg d-flex justify-content-center p-2 mx-2">
+                            <h5 ><b id="texto"></b></h5>
+                        </div>
+                        <div class="carrito__lista__precios d-flex justify-content-between align-items-center p-2 mx-2">
+                            <h5>Cake1</h5><h5>$100</h5>
+                        </div>
+                        <div class="carrito__lista__precios d-flex justify-content-between align-items-center p-2 mx-2">
+                            <h5>Cake2</h5><h5>$100</h5>
+                        </div>
+                        <div class="carrito__lista__precios d-flex justify-content-between align-items-center p-2 mx-2">
+                            <h5>Cake3</h5><h5>$100</h5>
+                        </div>
+                        <div class="carrito__lista__precios d-flex justify-content-between align-items-center p-2 mx-2">
+                            <h5>Cake3</h5><h5>$100</h5>
+                        </div>
+                        <div class="carrito__lista__precios d-flex justify-content-between align-items-center p-2 mx-2">
+                            <h5>Cake4</h5><h5>$100</h5>
+                        </div>
+                        <div class="carrito__lista__precios d-flex justify-content-between align-items-center p-2 mx-2">
+                            <h6>Subtotal</h6><h6><strong>$400</strong></h6>
+                        </div>
+                        <div class="carrito__lista__precios d-flex justify-content-between align-items-center p-2 mx-2">
+                            <h6>Envío</h6><h6><strong>$400</strong></h6>
+                        </div>
+                        <div class="carrito__lista__precios d-flex justify-content-between align-items-center p-2 mx-2">
+                            <h4>Total</h4><h4><strong>$800</strong></h4>
+                        </div>
+                    </div>
+                    <div class="carrito__buttonLista d-flex justify-content-end">
+                        <button class="btn mx-2 mx-lg-4 mb-5 mb-sm-5 my-3">Continuar</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <a href="#" class="to-top d-flex align-items-center justify-content-center"><i
+            class="fa-solid fa-circle-chevron-up icono__scrollButton"></i></a>
+    <footer>
+        <div class="footer__desktop d-flex align-items-center justify-content-evenly">
+            <section class="footer__desktop__padre d-flex  gap-2 p-4">
+                <div class="footer__desktop__redesSociales__Instagram">
+                    <a href="https://instagram.com/epikuscake?igshid=YmMyMTA2M2Y=" target="blank"> <i
+                            class="fa-brands fa-instagram footer__desktop__img"></i></a>
+                </div>
+                <div class="footer__desktop__redesSociales__Email">
+                    <a href="./contacto.html"><i class="fa-sharp fa-solid fa-envelope footer__desktop__img"></i></a>
+                </div>
+                <div class="footer__desktop__redesSociales__Whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=541125944586&text=Hola te escribo desde tu web"
+                        target="blank"><i class="fa-brands fa-whatsapp footer__desktop__img"></i></a>
+                </div>
+            </section>
+            <section class="footer__desktop__derechos d-flex flex-column align-items-center ">
+                <h5><strong>Derechos Reservados Epikus Cake, S.A. 2022 ©</strong></h5>
+                <h6>Desarrollado por Cesar Di Leonardo</h6>
+            </section>
+            <section class="footer__desktop__horarios d-flex flex-column align-items-center p-3">
+                <h5 class="my-2"><strong>Horarios</strong></h5>
+                <div class="footer__desktop__contenedorHorarios d-flex">
+                    <div class="footer__diasSemanaTexto d-flex flex-column align-items-center m-2">
+                        <h6>Lunes a Viernes</h6>
+                        <h6><i class="fa-regular fa-clock m-2"></i>09:00am -06:00pm </h6>
+                    </div>
+                    <div class="footer__finDeSemanaTexto d-flex flex-column align-items-center m-2">
+                        <h6>Sábados</h6>
+                        <h6><i class="fa-regular fa-clock m-2"></i>09:00am-03:00pm</h6>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

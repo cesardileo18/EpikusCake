@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Empresa familiar que nace mediados del 2014 como hobby haciendo panes dulces
+    galletas, tortas, ha medida del tiempo fueron creciendo las ventas y las personas que nos compraban una vez
+    lo seguían haciendo, como también nos pedian otra variedad de dulces y tortas lo cual nos sirvió para estudiar 
+    y aprender mas sobre el oficio, hoy en día somos una empresa ya establecida con una gama de productos">
+    <!-- Incorporo iconos mediante fontawesome, para respetar el diseño de figma -->
+    <link rel="stylesheet" href="../iconos/fontawesome/css/all.min.css">
+    <!-- Incorporo bootstrap-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Nosotros | Epikus Cake</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logosEpikus/iconEpikus.ico">
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light px-2">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <img src="../img/logosEpikus/epikusFondoBlanco100X100.png" class="header__logo" alt="Logo Epikus Cake">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>Epikus Cake</strong></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-md-evenly">
+                        <div class="offcanvas-body-padreNav">
+                            <ul class="navbar-nav flex-grow-1 pe-3 gap-md-5">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html"><i
+                                            class="fa-solid fa-house mx-2 nav__iconResponsive"></i>Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-basket-shopping mx-2 nav__iconResponsive"></i>Productos
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="./pasteleria.html"><i class="fa-solid fa-cookie-bite mx-2"></i>Pastelería</a></li>
+                                        <li><a class="dropdown-item" href="./tortas.html"><i class="fa-solid fa-cake-candles mx-2"></i>Tortas</a></li>
+                                        <li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./nosotros.html"><i
+                                            class="fa-solid fa-users mx-2 nav__iconResponsive"></i>Nosotros</a>
+                                </li>
+                                <li class="nav-item nav__contacto">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item nav__info">
+                                    <a class="nav-link" href="./informacion.html"><i
+                                            class="fa-solid fa-circle-info mx-2 nav__iconResponsive"></i>Información</a>
+                                </li>
+                            </ul>
+                            <div class="footer_responsive">
+                                <h5><strong>Redes Sociales</strong></h5>
+                                <div class="footer__redesSocialesInstagram">
+                                    <a href="https://instagram.com/epikuscake?igshid=YmMyMTA2M2Y=" target="blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <hr />
+                                <h5 className='mt-4'><strong>Contacto</strong></h5>
+                                <div class="footer__padre d-flex gap-1">
+                                    <div class="footer__redesSocialesEmail">
+                                        <a href="./contacto.html"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="footer__redesSocialesWhatsapp">
+                                        <a href="https://api.whatsapp.com/send?phone=541125944586&text=Hola te escribo desde tu web"
+                                            target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="icono__carrito" href="./carrito.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+        </nav>
+    </header>
+    <main class="d-flex flex-column">
+        <div class="container-fluid">
+            <div class="row">
+                <section class="nosotros col-12 mb-3">
+                    <div class="page-header my-3">
+                        <h1 class="text-center">Nosotros</h1>
+                    </div>
+                    <article>
+                        Somos una empresa familiar dedicada al mundo de la repostería, pastelería y 
+                        panadería, nos caraterizamos en hacer tus momentos únicos he inolvidables
+                        , y formar parte de sus alegrías. Antes de realizar cualquier entrega hacemos 
+                        las pruebas pertinentes para entregar un producto de calidad.
+                        Nuestro lema es amor y pasión por lo que hacemos para nuestros productos siempre
+                        sean lo mejor. 
+                    </article>
+                </section>
+                <section class="imgNosotros col-lg-12 col-md-12 d-flex my-2 p-2">
+                    <div class="imagen1 img__nosotros__parallax d-flex justify-content-center">
+                    </div>
+                </section>
+                <section class="nosotrosArticleChef col-lg-12 col-md-12">
+                    <div class="page-header my-3">
+                        <h2 class="text-center">Chef Epikus</h2>
+                    </div>
+                    <div class="contenedorPadreBiografia ">
+                        <article>
+                            Alejandra nació en Venezuela Maracay-Aragua el 11 de noviembre de 1991,
+                            una ciudad o provincia de costa con playas a sus cercanías, hija de Luis
+                            Calanche y Leibia Nieves, desde pequeña empezó su afinidad con la repostería
+                            de la mano de su abuela paterna, la cual la enseñaba hacer todo tipo de galletas
+                            y dulces al ver su interes en aprender dicho oficio.
+                            Al transcurrir el tiempo y ya en su adultes, empezó a capacitarse, haciendo cursos
+                            y poniéndolos en prática en casa, una de sus anécdotas es en la facultad de ingeniería 
+                            de la Universidad de Carabobo, por hobby empezó a vender algo tan simple como galletas
+                            que por supuesto bajo las recetas de su abuela y para su sorpresa las personas que le 
+                            compraron una vez volvieron a pedirle una y otra vez, se corrió la vos por toda la facultad
+                            y se ganó el apodo de la chica de las galletas, que ya no eran nada mas galletas sino todo 
+                            tipo de dulces, tortas, y panes.
+                            Al transcurrir el tiempo estableció su emprendimiento con la ayuda de sus familiares y 
+                            su novio actualmente esposo y padre de su hija hanna lucia, por la situación que atravesaba
+                            su país, deciden en el año 2016 emigrar al país de Argentina en busca de una mejor 
+                            calidad de vida, en la cual termina de afianzar sus conocimientos estudiando Pastelería 
+                            Profesional de la mano de su ídolo Oswaldo Gross en el  Instituto Argentino de Gastronomía (IAG)
+                            la cual culminó de manera exitosa, y luego nace este emprendimiento llamado Epikus Cake
+                            100% familiar y artesanal trabajando con los mejores productos del mercado.     
+                        </article>
+                    </div>
+                </section>
+                <section class="baCelebra mb-5 ">
+                    <div class="page-header my-3">
+                        <h2 class="text-center">BA Celebra Venezuela 2022</h2>
+                    </div>
+                    <div class="contenedorPadreBiografia ">
+                        <article class="mb-5">
+                            Una experiencia realmente única, rodeados de miles de personas degustando 
+                            de nuestra gastronomía y postres.
+                        </article>
+                        <div class="imagen2 img__nosotros__parallax"></div>
+                    </div>
+                </section>
+                <section class="reacciones mb-3 rounded-4">
+                    <div class="page-header my-3">
+                        <h2 class="text-center mb-3">Reacciones</h2>
+                        <div class="contenedorVideos d-flex flex-column align-items-center">
+                            <video src="../videos/video1.mp4" class="mb-4 rounded-4" controls></video>
+                            <video src="../videos/video2.mp4" class="mb-4 rounded-4" controls></video>
+                            <video src="../videos/video3.mp4" class="mb-4 rounded-4" controls></video>
+                            <video src="../videos/video4.mp4" class="mb-4 rounded-4" controls></video>
+                        </div>
+                    </div>
+                </section>
+                <section class="cards">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="page-header my-3">
+                                <h3 class="text-center">Nuestros trabajos personalizados</h3>
+                            </div>
+                            <div class="d-flex justify-content-evenly flex-wrap mb-5">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/minios.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/ariel.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/nba.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/play.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/et.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/minecrasft.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/sebas.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/mujerMaravilla.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/halowen.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/lol.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/rugrats.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/chocoTorta.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/chocoRosa.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="thumbnail m-3 p-3">
+                                        <img src="../trabajosPersonalizados/up.jpeg"
+                                            class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <a href="#" class="to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-circle-chevron-up icono__scrollButton"></i></a>
+    <footer>
+        <div class="footer__desktop d-flex align-items-center justify-content-evenly">
+            <section class="footer__desktop__padre d-flex  gap-2 p-4">
+                <div class="footer__desktop__redesSociales__Instagram">
+                    <a href="https://instagram.com/epikuscake?igshid=YmMyMTA2M2Y=" target="blank"> <i
+                            class="fa-brands fa-instagram footer__desktop__img"></i></a>
+                </div>
+                <div class="footer__desktop__redesSociales__Email">
+                    <a href="./contacto.html"><i class="fa-sharp fa-solid fa-envelope footer__desktop__img"></i></a>
+                </div>
+                <div class="footer__desktop__redesSociales__Whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=541125944586&text=Hola te escribo desde tu web"
+                        target="blank"><i class="fa-brands fa-whatsapp footer__desktop__img"></i></a></a>
+                </div>
+            </section>
+            <section class="footer__desktop__derechos d-flex flex-column align-items-center ">
+                <h5><strong>Derechos Reservados Epikus Cake, S.A. 2022 ©</strong></h5>
+                <h6>Desarrollado por Cesar Di Leonardo</h6>
+            </section>
+            <section class="footer__desktop__horarios d-flex flex-column align-items-center p-3">
+                <h5 class="my-2"><strong>Horarios</strong></h5>
+                <div class="footer__desktop__contenedorHorarios d-flex">
+                    <div class="footer__diasSemanaTexto d-flex flex-column align-items-center m-2">
+                        <h6>Lunes a Viernes</h6>
+                        <h6><i class="fa-regular fa-clock m-2"></i>09:00am -06:00pm </h6>
+                    </div>
+                    <div class="footer__finDeSemanaTexto d-flex flex-column align-items-center m-2">
+                        <h6>Sábados</h6>
+                        <h6><i class="fa-regular fa-clock m-2"></i>09:00am-03:00pm</h6>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer__responsive d-flex justify-content-center p-4 col-12">
+            <div class="footer__responsive__carrito d-flex align-items-center justify-content-evenly rounded-5 col-12 p-3">
+                <a href="./carrito.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                <a href="./carrito.html"><h5>Ver pedido<h5><strong><h5>$600</h5></strong></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

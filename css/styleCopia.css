@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none !important;
+}
+main{
+    min-height: calc(100vh - 200px);
+    height: 100%;
+}
+/* Header */
+div.container-fluid.responsive{
+    display: none !important;
+}
+.nav__iconResponsive{
+    display: none;
+}
+header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanvas.offcanvas-start div.offcanvas-body ul li a{
+    color: #fc0da0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.fa-solid.fa-bars{
+    color: white;
+}
+li.nav-item.nav__info{
+    display: none;
+}
+button.navbar-toggler{
+    border: none !important;
+    box-shadow: 5px 10px 20px 2px rgba(230, 36, 36, 0.273) !important;
+}
+button.navbar-toggler:focus{
+    border: none !important;
+    background-color: #fc0da0;
+}
+h5#offcanvasNavbarLabel.offcanvas-title{
+    color: white;
+}
+ul.dropdown-menu.show{
+    background-color: #f423a46e;
+}
+ul.dropdown-menu.show li a{
+    color: white !important;
+    font-size: 1rem !important;
+}
+ul.dropdown-menu.show li a:hover{
+    background-color: #fd029e6e;
+}
+.navbar.navbar-expand-md.bg-light.px-2 {
+    background-color: #f50f9e4a !important;
+}
+.header__logo{
+    max-width: 80px;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+    padding-bottom: 2px;
+}
+i.fa-solid.fa-cart-arrow-down{
+    margin-right: 40px;
+    font-size: 25px;
+    color: #fc0da0;
+}
+/*Fin Header */
+/* Carrusel */
+.slide{
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+}
+.imgCarrusel1{
+    background-image: url("../img/pasteleria/cake-4910417_1280.png");
+}
+.imgCarrusel2{
+    background-image: url("../img/pasteleria/raspberry-pie-1987673_1920.png");
+}
+.imgCarrusel3{
+    background-image: url("../img/pasteleria/blueberries-3946230_1280.png");
+}
+.imgCarrusel4{
+    background-image: url("../img/pasteleria/macarons.jpg");
+}
+main section.carrusel div.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/*Fin Carrusel */
+/* Cards */
+h5, h6{
+    color: #f112bd;
+}
+section.cards h2{
+    color: #f112bd;
+    font-size: 1.25rem;
+}
+.btn{
+    background-color: #ee62bf;
+    color: #fcfcfc;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: #f112bd;
+    color: #fffeff;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+.card{
+    width: 100% ;
+    height: 100% ;
+}
+img.thumbnail__img{
+    width: 100%;
+    max-height: 260px;
+    height: 100%;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+    object-fit: cover;
+    background-position: center;
+}
+img.thumbnail__img:hover {
+    transform: scale(1.2);
+} 
+.thumbnail{
+    border-radius: 30px;
+    background-color: #f50f9d21;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+.thumbnail:hover {
+    box-shadow: 5px 10px 20px 2px rgba(230, 36, 36, 0.273) !important;
+    transform: scale(1.1);
+}
+/* Input */
+div.input__search{
+    border: 1px solid #ced4da;
+}
+div.input__search:focus-within{
+    border: 1px solid #fc0da045 !important;
+} 
+input.form-control{
+    border: none;
+    transition: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+textarea#exampleFormControlTextarea1.form-control{
+    transition: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+textarea#exampleFormControlTextarea1.form-control:focus-within{
+    border: 1px solid #fc0da045 !important;
+} 
+/*Fin Input */
+/*Fin Cards */
+/* Nosotros */
+.imgNosotros--biografia{
+    position:relative;
+    z-index: 1;
+    top: 40px;
+    left : 10px;
+}
+.imgNosotros--biografia2{
+    position:relative;
+    z-index: 2;
+    right : 30px;
+
+}
+section.nosotrosArticleChef h2{
+    font-size: 2.3rem;
+}
+/*Fin Nosotros */
+/* Footer */
+
+.footer_responsive{
+    display: none;
+}
+.footer__redesSocialesInstagram{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    margin: 0px 10px 0px 10px;
+}
+.footer__redesSocialesEmail{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    background-color: rgb(135, 131, 131);
+    margin: 0px 10px 0px 10px;
+}
+.footer__redesSocialesWhatsapp{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    background-color: #25D366;
+    margin: 0px 10px 0px 10px;
+
+}
+.fa-brands.fa-instagram{
+    font-size: 30px;
+    color: white;
+}
+.fa-sharp.fa-solid.fa-envelope{
+    font-size: 30px;
+    color: white;
+}
+.fa-brands.fa-whatsapp{
+    font-size: 30px;
+    color: white;
+}
+.fa-solid.fa-magnifying-glass{
+    margin-left: 15px;
+}
+footer div.footer__desktop{
+    height: 100%;
+    background-color: #f50f9e4a;
+}
+.footer__desktop__redesSociales__Instagram{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    margin: 0px 10px 0px 10px;
+}
+.footer__desktop__redesSociales__Email{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(135, 131, 131);
+    margin: 0px 10px 0px 10px;
+}
+.footer__desktop__redesSociales__Whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #25D366;
+    margin: 0px 10px 0px 10px;
+}
+.footer__desktop__img{
+    color: white;
+    font-size: 30px;
+}
+section.footer__desktop__horarios.d-flex.flex-column.align-items-center.p-3 h5{
+    line-height: 0.50rem;
+    padding: 0px;
+    margin: 0px;
+}
+div.footer__responsive.d-flex.justify-content-center.p-4{
+    display: none !important;
+}
+/*Fin Footer */
+/* Informacion */
+.padreHorarios{
+    background-color: #f5a7c12e;
+}
+.padreHorarios:hover{
+    box-shadow: 5px 10px 20px 2px rgba(230, 36, 36, 0.273) !important;
+}
+.icono__formasDePago{
+    font-size: 30px;
+}
+/*Fin Informacion */
+
+/* scrollButton30 */
+.icono__scrollButton{
+    color: #fc0da045;
+    cursor: pointer;
+}
+.to-top{
+    position: fixed;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all .4s;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+}
+/*Fin scrollButton */
+/* Carrito */
+div.padreCarrito__inputs.d-flex.justify-content-evenly h6{
+    margin-bottom: 0px !important;
+}
+section.direccion h6{
+    margin-bottom: 0px !important;
+}
+.carrito__inputs{
+    background-color: #f5a7c12e;
+    height: 35px;
+}
+.direccion__padre.mx-lg-4.p-3{
+    background-color: #f5a7c12e;
+}
+/* Lista de compra */
+div.page-header.mx-2.carrito__lista{
+    background-color: #f5a7c12e;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.carrito__lista__img{
+    width: 50px;
+    height: 50px;
+}
+div.carrito__buttonLista.d-flex.justify-content-end{
+    display: none !important;
+}
+/*Fin Lista de compra */
+/*Fin Carrito */
+/* contacto */
+section.ubicacion h2{
+    font-size: 2.3rem;
+}
+/* Fin Contacto */
+/* MediasQuery */
+@media screen and (max-width: 1070px){
+    footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h5{
+        font-size: 1rem;
+    }
+    footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h6{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 930px){
+    footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h5{
+        font-size: 0.8rem;
+    }
+    footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h6{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 799px){
+    footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h5 {
+        font-size: 0.8rem !important;
+    }
+    footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h6 {
+        font-size: 0.49rem !important;
+    }
+}
+/*Cuando entra en modo Celular*/
+@media screen and (max-width: 767px){
+    .icono__carrito__atras{
+        color: #fc0da045;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    div.container-fluid.navbar__desktop{
+        display: none !important;
+    }
+    div.container-fluid.responsive{
+        display: flex !important;
+    }
+    div.footer__desktop.d-flex.align-items-center.justify-content-evenly{
+    display: none !important;
+    }
+    div.footer__responsive.d-flex.justify-content-center.p-4{
+        background-color: #f50f9e4a;
+        display: flex !important;
+    }
+    .footer__responsive__carrito{
+        background-color: #f112bd;;
+    }
+    .footer__responsive__carrito h5{
+        color: #fffeff;
+        margin-bottom: 0px !important;
+    }
+    div.footer__responsive__carrito i.fa-solid.fa-cart-arrow-down{
+        margin-right: 0px;
+        color: #fffeff;
+    }
+    div.carrito__buttonDireccion.d-flex.justify-content-end{
+        display: none !important;
+    }
+    div.carrito__buttonLista.d-flex.justify-content-end{
+        display: flex !important;
+    }
+    .icono__carrito {
+        display: none;
+    }
+    .padreHorarios{
+        background-color: #f5a7c12e;
+    }
+    .padreHorarios:hover{
+        box-shadow: 5px 10px 20px 2px rgba(230, 36, 36, 0.273) !important;
+    }
+    .icono__formasDePago{
+        font-size: 30px;
+    }
+    main{
+        min-height: calc(100vh - 100px);
+    }
+    .footer_responsive{
+        display: block;
+    }
+    ul.navbar-nav.flex-grow-1.pe-3.gap-md-5{
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100vh - 350px);
+    }
+    div#offcanvasNavbar.offcanvas.offcanvas-start.show{
+        background-color: #f5a7c1;
+    }
+    div#offcanvasNavbar.offcanvas.offcanvas-start{
+        background-color: #f5a7c1;
+    }
+    li.nav-item.nav__info{
+        display: block;
+    }
+    li.nav-item.nav__contacto{
+        display: none;
+    }
+    .nav__iconResponsive{
+        display: block;
+    }
+    header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanvas.offcanvas-start div.offcanvas-body ul li a {
+        display: flex;
+        align-items: center;
+    }
+} 
+@media screen and (max-width: 630px){
+    div.padreCarrito__inputs.d-flex.justify-content-evenly h6{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 575px){
+    section.formulario h2{
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+}
+/*Fin MediasQuery */
+

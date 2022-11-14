@@ -1,0 +1,36 @@
+/* Nosotros */
+main{
+    div.container-fluid{
+        // section.imgNosotros{
+            div.img__nosotros__parallax{
+                width: 100%;
+                height: 400px !important;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+            }
+            div.imagen1{
+                background-image: url("../img/ba.jpg");
+            }
+            div.imagen2{
+                background-image: url("../img/IMG_20220611_143944167_HDR.jpg");
+            }
+        // }
+        section.nosotrosArticleChef{
+            div.page-header.my-3{
+                h2{
+                    font-size: 2.3rem !important;
+                }
+            }
+        }
+        section.reacciones{
+            background-color:rgb(245 52 176 / 24%);
+            video{
+                background-color: rgb(86 40 52 / 18%)  !important;
+                width: 75%;
+                height: 300px;
+            }
+        }
+    }
+}
+/*Fin Nosotros */

@@ -1,0 +1,177 @@
+/* Header */
+header {
+    nav.navbar.navbar-expand-md.bg-light.px-2{
+        background-color: #f50f9e4a !important;
+        div.container-fluid.responsive{
+            display: none !important;
+        }
+        div.container-fluid{
+            .fa-solid.fa-bars{
+                color: white;
+            }
+            button.navbar-toggler{
+                border: none !important;
+                box-shadow: 5px 10px 20px 2px rgba(230, 36, 36, 0.273) !important;
+            }
+            button.navbar-toggler:focus{
+                border: none !important;
+                background-color: #fc0da0;
+            }
+            .header__logo{
+                max-width: 80px;
+                width: 100%;
+                max-height: 80px;
+                height: 100%;
+                padding-bottom: 2px;
+            }
+            div.offcanvas.offcanvas-start{
+                h5#offcanvasNavbarLabel.offcanvas-title{
+                    color: white;
+                }
+                div.offcanvas-body{
+                    ul{
+                        li{
+                            a{
+                                color: #fc0da0;
+                                font-weight: 600;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    .nav__iconResponsive{
+                        display: none;
+                    }
+                    li.nav-item.nav__info{
+                        display: none;
+                    }
+                    ul.dropdown-menu.show{
+                        background-color: #f423a46e;
+                        li{
+                            a{
+                                color: white !important;
+                                font-size: 1rem !important;
+                                &:hover{
+                                    background-color: #fd029e6e;
+                                }
+                            }
+                        }
+                    }
+                    .footer_responsive{
+                        display: none;
+
+                    }
+                    .footer__redesSocialesInstagram{
+                        display: flex;
+                        align-items: center;
+                        justify-content:center;
+                        width:40px;
+                        height:40px;
+                        border-radius: 100%;
+                        background: linear-gradient(#405DE6, #5B51D8, #833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+                        margin: 0px 10px 0px 10px;
+                    }
+                    .footer__redesSocialesEmail{
+                        display: flex;
+                        align-items: center;
+                        justify-content:center;
+                        width:40px;
+                        height:40px;
+                        border-radius: 100%;
+                        background-color: rgb(135, 131, 131);
+                        margin: 0px 10px 0px 10px;
+                    }
+                    .footer__redesSocialesWhatsapp{
+                        display: flex;
+                        align-items: center;
+                        justify-content:center;
+                        width:40px;
+                        height:40px;
+                        border-radius: 100%;
+                        background-color: #25D366;
+                        margin: 0px 10px 0px 10px;
+                    
+                    }
+                    .fa-brands.fa-instagram{
+                        font-size: 30px;
+                        color:  $color-secundario;
+                    }
+                    .fa-sharp.fa-solid.fa-envelope{
+                        font-size: 30px;
+                        color:  $color-secundario;
+                    }
+                    .fa-brands.fa-whatsapp{
+                        font-size: 30px !important;
+                        color:  $color-secundario !important;
+                    }
+                }
+            }
+        }
+
+    }
+}
+/*Fin Header */
+i.fa-solid.fa-cart-arrow-down{
+    margin-right: 40px;
+    font-size: 25px;
+    color: #fc0da0;
+}
+/* MediasQuery */
+/*Cuando entra en modo Celular*/
+@media screen and (max-width: 767px){
+    /* Nav */
+    header{
+        nav.navbar.navbar-expand-md.bg-light.px-2{
+            div.container-fluid.navbar__desktop{
+                display: none !important;
+            }
+            div.container-fluid.responsive{
+                display: flex !important;
+                .icono__carrito__atras{
+                    color: #fc0da045;
+                    cursor: pointer;
+                    font-size: 2rem;
+                }
+            }
+            div.container-fluid{
+                div.offcanvas.offcanvas-start{
+                    background-color: #f5a7c1 !important;
+                    div.offcanvas-body{
+                        ul.navbar-nav.flex-grow-1.pe-3.gap-md-5{
+                            display: flex;
+                            flex-direction: column;
+                            min-height: calc(100vh - 350px);
+                        }
+                        ul{
+                            li{
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                        li.nav-item.nav__info{
+                            display: block;
+                        }
+                        li.nav-item.nav__contacto{
+                            display: none;
+                        }
+                        .nav__iconResponsive{
+                            display: block;
+                        }
+                        .footer_responsive{
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+            .icono__carrito {
+                display: none;
+            }
+        }
+    }
+    /*Fin Nav */
+    main{
+        min-height: calc(100vh - 100px);
+    }
+} 
+/*Fin MediasQuery */

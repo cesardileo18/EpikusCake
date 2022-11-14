@@ -1,0 +1,12 @@
+/* pagina informacion */
+main{
+    section.Horarios{
+        div.padreHorarios{
+            background-color: #f5a7c12e;
+            &:hover{
+                box-shadow: $sombra-global;
+            }
+        }
+    }
+}
+/*Fin pagina informacion */

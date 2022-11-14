@@ -1,0 +1,26 @@
+main{
+    div.container-fluid{
+        section.ubicacion{
+            div.page-header.my-3{
+                h2{
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    main{
+        div.container-fluid{
+            section.ubicacion{
+                div.page-header.my-3{
+                    h2{
+                        font-size: 2rem;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Fin MediasQuery */

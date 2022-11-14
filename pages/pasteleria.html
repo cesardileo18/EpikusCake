@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Te traemos lo mejor de la pastelería directo a tu mesa, elaborada
+    siempre con lo mejor del mercado, para ofrecerte un producto de calidad, que puedas tanto degustar en familia
+    como dar un regalo a una persona especial">
+    <!-- Incorporo iconos mediante fontawesome, para respetar el diseño de figma -->
+    <link rel="stylesheet" href="../iconos/fontawesome/css/all.min.css">
+    <!-- Incorporo bootstrap-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Nuestra pastelería artesanal | Epikus Cake</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logosEpikus/iconEpikus.ico">
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light px-2">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <img src="../img/logosEpikus/epikusFondoBlanco100X100.png" class="header__logo" alt="Logo Epikus Cake">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>Epikus Cake</strong></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-md-evenly">
+                        <div class="offcanvas-body-padreNav">
+                            <ul class="navbar-nav flex-grow-1 pe-3 gap-md-5">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html"><i
+                                            class="fa-solid fa-house mx-2 nav__iconResponsive"></i>Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-basket-shopping mx-2 nav__iconResponsive"></i>Productos
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="./pasteleria.html"><i
+                                                    class="fa-solid fa-cookie-bite mx-2"></i>Pastelería</a></li>
+                                        <li><a class="dropdown-item" href="./tortas.html"><i
+                                                    class="fa-solid fa-cake-candles mx-2"></i>Tortas</a></li>
+                                        <li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./nosotros.html"><i
+                                            class="fa-solid fa-users mx-2 nav__iconResponsive"></i>Nosotros</a>
+                                </li>
+                                <li class="nav-item nav__contacto">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item nav__info">
+                                    <a class="nav-link" href="./informacion.html"><i
+                                            class="fa-solid fa-circle-info mx-2 nav__iconResponsive"></i>Información</a>
+                                </li>
+                            </ul>
+                            <div class="footer_responsive">
+                                <h5><strong>Redes Sociales</strong></h5>
+                                <div class="footer__redesSocialesInstagram">
+                                    <a href="https://instagram.com/epikuscake?igshid=YmMyMTA2M2Y=" target="blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <hr />
+                                <h5 className='mt-4'><strong>Contacto</strong></h5>
+                                <div class="footer__padre d-flex gap-1">
+                                    <div class="footer__redesSocialesEmail">
+                                        <a href="./contacto.html"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="footer__redesSocialesWhatsapp">
+                                        <a href="https://api.whatsapp.com/send?phone=541125944586&text=Hola te escribo desde tu web"
+                                            target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="icono__carrito" href="./carrito.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+        </nav>
+    </header>
+    <main class="d-flex flex-column">
+        <section class="cards">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="page-header my-3">
+                        <div class="input__searchPadre col-lg-12 my-3 d-flex justify-content-center">
+                            <div
+                                class="input__search col-lg-6 col-md-8 col-sm-8 col-10 d-flex align-items-center rounded-3">
+                                <i class="fa-solid fa-magnifying-glass"></i><input type="text" class="form-control"
+                                    placeholder="Buscar">
+                            </div>
+                        </div>
+                        <h1 class="text-center">Pastelería Artesanal</h1>
+                    </div>
+                    <div class="d-flex justify-content-evenly flex-wrap mb-5">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail m-3 p-3">
+                                <img src="../img/pasteleria/blueberries-3946230_1280.png"
+                                    class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                <div class="card-body p-3 my-2">
+                                    <h2 class="card-title text-center">Pie de Arandanos</h2>
+                                    <p class="card-text">Pie de Arandanos con una base de masa quebrada y un relleno
+                                        de crema pastelera</p>
+                                    <div class="card__precio d-flex align-items-center justify-content-between p-1">
+                                        <span><strong>$600</strong></span>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail m-3 p-3">
+                                <img src="../img/pasteleria/cake-1775964_1920.png" class="card-img-top thumbnail__img"
+                                    alt="imagen pasteleria">
+                                <div class="card-body p-3 my-2">
+                                    <h2 class="card-title text-center">Tota Opera</h2>
+                                    <p class="card-text">Bizcochuelo de vainilla relleno con crema de cafe y chocolate,
+                                        cubierto de ganache.</p>
+                                    <div class="card__precio d-flex align-items-center justify-content-between p-1">
+                                        <span><strong>$600</strong></span>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+                            <div class="thumbnail m-3 p-3">
+                                <img src="../img/pasteleria/cake-4910417_1280.png" class="card-img-top thumbnail__img"
+                                    alt="imagen pasteleria">
+                                <div class="card-body p-3 my-2">
+                                    <h2 class="card-title text-center">Tarta Multifruta</h2>
+                                    <p class="card-text">Masa sable rellena de crema diplomata cubierta de crema chantilly, 
+                                        frutas de estación.</p>
+                                    <div class="card__precio d-flex align-items-center justify-content-between p-1">
+                                        <span><strong>$600</strong></span>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail m-3 p-3">
+                                <img src="../img/pasteleria/dessert-352475_1280.png" class="card-img-top thumbnail__img"
+                                    alt="imagen pasteleria">
+                                <div class="card-body p-3 my-2">
+                                    <h2 class="card-title text-center">Petit Fours</h2>
+                                    <p class="card-text">Mini torta de vainilla rellena de crema chantilly,frutillas frescas,
+                                        en distintas presentaciones.
+                                    </p>
+                                    <div class="card__precio d-flex align-items-center justify-content-between p-1">
+                                        <span><strong>$600</strong></span>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail m-3 p-3">
+                                <img src="../img/pasteleria/macarons.jpg" class="card-img-top thumbnail__img"
+                                    alt="imagen pasteleria">
+                                <div class="card-body p-3 my-2">
+                                    <h2 class="card-title text-center">Macarrones</h2>
+                                    <p class="card-text">Postre hecho con clara de huevo,harina de almendras,diversos rellenos
+                                        y presentaciones.</p>
+                                    <div class="card__precio d-flex align-items-center justify-content-between p-1">
+                                        <span><strong>$600</strong></span>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail m-3 p-3">
+                                <img src="../img/pasteleria/patisserie-1023501_1920.png"
+                                    class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                <div class="card-body p-3 my-2">
+                                    <h2 class="card-title text-center">Profiteroles</h2>
+                                    <p class="card-text">Masa pasta choux rellena de crema pastelera y vainilla o de chocolate,
+                                        cubierto con caramelo.
+                                    </p>
+                                    <div class="card__precio d-flex align-items-center justify-content-between p-1">
+                                        <span><strong>$600</strong></span>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail m-3 p-3">
+                                <img src="../img/pasteleria/sweets-in-the-window-4962134_1920.png"
+                                    class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                <div class="card-body p-3 my-2">
+                                    <h2 class="card-title text-center">Mini Gateaux</h2>
+                                    <p class="card-text">Mini postres a base de masa sable, o bizcochuelo
+                                        de sabores surtidos, frutilla, chocolate.
+                                    </p>
+                                    <div class="card__precio d-flex align-items-center justify-content-between p-1">
+                                        <span><strong>$600</strong></span>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail m-3 p-3">
+                                <img src="../img/pasteleria/strawberry-2103278_1920.png"
+                                    class="card-img-top thumbnail__img" alt="imagen pasteleria">
+                                <div class="card-body p-3 my-2">
+                                    <h2 class="card-title text-center">Cuadrado de frutilla</h2>
+                                    <p class="card-text">Masa de ojaldre relleno de crema, dulce de leche
+                                        frutilla, y crema chantilly saborizada.</p>
+                                    <div class="card__precio d-flex align-items-center justify-content-between p-1">
+                                        <span><strong>$600</strong></span>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <a href="#" class="to-top d-flex align-items-center justify-content-center"><i
+            class="fa-solid fa-circle-chevron-up icono__scrollButton"></i></a>
+    <footer>
+        <div class="footer__desktop d-flex align-items-center justify-content-evenly">
+            <section class="footer__desktop__padre d-flex  gap-2 p-4">
+                <div class="footer__desktop__redesSociales__Instagram">
+                    <a href="https://instagram.com/epikuscake?igshid=YmMyMTA2M2Y=" target="blank"> <i
+                            class="fa-brands fa-instagram footer__desktop__img"></i></a>
+                </div>
+                <div class="footer__desktop__redesSociales__Email">
+                    <a href="./contacto.html"><i class="fa-sharp fa-solid fa-envelope footer__desktop__img"></i></a>
+                </div>
+                <div class="footer__desktop__redesSociales__Whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=541125944586&text=Hola te escribo desde tu web"
+                        target="blank"><i class="fa-brands fa-whatsapp footer__desktop__img"></i></a></a>
+                </div>
+            </section>
+            <section class="footer__desktop__derechos d-flex flex-column align-items-center ">
+                <h5><strong>Derechos Reservados Epikus Cake, S.A. 2022 ©</strong></h5>
+                <h6>Desarrollado por Cesar Di Leonardo</h6>
+            </section>
+            <section class="footer__desktop__horarios d-flex flex-column align-items-center p-3">
+                <h5 class="my-2"><strong>Horarios</strong></h5>
+                <div class="footer__desktop__contenedorHorarios d-flex">
+                    <div class="footer__diasSemanaTexto d-flex flex-column align-items-center m-2">
+                        <h6>Lunes a Viernes</h6>
+                        <h6><i class="fa-regular fa-clock m-2"></i>09:00am -06:00pm </h6>
+                    </div>
+                    <div class="footer__finDeSemanaTexto d-flex flex-column align-items-center m-2">
+                        <h6>Sábados</h6>
+                        <h6><i class="fa-regular fa-clock m-2"></i>09:00am-03:00pm</h6>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer__responsive d-flex justify-content-center p-4 col-12">
+            <div
+                class="footer__responsive__carrito d-flex align-items-center justify-content-evenly rounded-5 col-12 p-3">
+                <a href="./carrito.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                <a href="./carrito.html">
+                    <h5>Ver pedido<h5><strong>
+                                <h5>$600</h5>
+                            </strong>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
