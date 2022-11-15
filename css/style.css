@@ -125,11 +125,11 @@ header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanv
 }
 header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanvas.offcanvas-start div.offcanvas-body .fa-brands.fa-instagram {
   font-size: 30px;
-  color: white;
+  color: white !important;
 }
 header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanvas.offcanvas-start div.offcanvas-body .fa-sharp.fa-solid.fa-envelope {
   font-size: 30px;
-  color: white;
+  color: white !important;
 }
 header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanvas.offcanvas-start div.offcanvas-body .fa-brands.fa-whatsapp {
   font-size: 30px !important;
@@ -227,7 +227,7 @@ footer div.footer__desktop .footer__desktop__redesSociales__Whatsapp {
   margin: 0px 10px 0px 10px;
 }
 footer div.footer__desktop .footer__desktop__img {
-  color: white;
+  color: white !important;
   font-size: 30px;
 }
 footer div.footer__desktop .fa-brands.fa-whatsapp {
@@ -284,7 +284,7 @@ footer div.footer__responsive {
   }
   footer div.footer__responsive div.footer__responsive__carrito i.fa-solid.fa-cart-arrow-down {
     margin-right: 0px;
-    color: white;
+    color: white !important;
   }
   /*Fin Footer */
 }
