@@ -42,15 +42,24 @@ footer{
             color:  $color-secundario;
         }
         section.footer__desktop__horarios.d-flex.flex-column.align-items-center.p-3{
-            h5{
+            h3{
                 line-height: 0.50rem;
                 padding: 0px;
                 margin: 0px;
             }
         }
+
     }
     div.footer__responsive{
         display: none !important;
+    }
+    h3{
+        font-size: 1.25rem !important ;
+        color: #f112bd !important
+    }
+    h4{
+        font-size: 1rem !important;
+        color: #f112bd !important
     }
 }
 /*Fin Footer */
@@ -59,10 +68,10 @@ footer{
 @media screen and (max-width: 1076px){
     footer{
         div.footer__desktop.d-flex.align-items-center.justify-content-evenly{
-            h5{
+            h3{
                 font-size: 1rem !important;
             }
-            h6{
+            h4{
                 font-size: 0.8rem !important;
             }
         }
@@ -71,10 +80,10 @@ footer{
 @media screen and (max-width: 930px){
     footer{
         div.footer__desktop.d-flex.align-items-center.justify-content-evenly{
-            h5{
+            h3{
                 font-size: 0.8rem !important;
             }
-            h6{
+            h4{
                 font-size: 0.6rem !important;
             }
         }
@@ -83,7 +92,7 @@ footer{
 @media screen and (max-width: 799px){
     footer{
         div.footer__desktop.d-flex.align-items-center.justify-content-evenly{
-            h6{
+            h4{
                 font-size: 0.49rem !important;
             }
         }
@@ -100,8 +109,8 @@ footer{
             display: flex !important;
             div.footer__responsive__carrito{
                 background-color: #f112bd;
-                h5{
-                    color: #fffeff;
+                h3{
+                    color: $color-secundario;
                     margin-bottom: 0px !important;
                 }
                 i.fa-solid.fa-cart-arrow-down{

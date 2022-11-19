@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h5, h6 {
-  color: #f112bd;
+  color: #f112bd !important;
 }
 
 /* Input */
@@ -49,7 +49,7 @@ header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid.responsive 
   display: none !important;
 }
 header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid .fa-solid.fa-bars {
-  color: white;
+  color: white !important;
 }
 header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid button.navbar-toggler {
   border: none !important;
@@ -66,8 +66,8 @@ header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid .header__lo
   height: 100%;
   padding-bottom: 2px;
 }
-header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanvas.offcanvas-start h5#offcanvasNavbarLabel.offcanvas-title {
-  color: white;
+header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanvas.offcanvas-start h3#offcanvasNavbarLabel.offcanvas-title {
+  color: white !important;
 }
 header nav.navbar.navbar-expand-md.bg-light.px-2 div.container-fluid div.offcanvas.offcanvas-start div.offcanvas-body ul li a {
   color: #fc0da0;
@@ -234,7 +234,7 @@ footer div.footer__desktop .fa-brands.fa-whatsapp {
   font-size: 30px !important;
   color: white !important;
 }
-footer div.footer__desktop section.footer__desktop__horarios.d-flex.flex-column.align-items-center.p-3 h5 {
+footer div.footer__desktop section.footer__desktop__horarios.d-flex.flex-column.align-items-center.p-3 h3 {
   line-height: 0.5rem;
   padding: 0px;
   margin: 0px;
@@ -242,27 +242,35 @@ footer div.footer__desktop section.footer__desktop__horarios.d-flex.flex-column.
 footer div.footer__responsive {
   display: none !important;
 }
+footer h3 {
+  font-size: 1.25rem !important;
+  color: #f112bd !important;
+}
+footer h4 {
+  font-size: 1rem !important;
+  color: #f112bd !important;
+}
 
 /*Fin Footer */
 /* MediasQuery */
 @media screen and (max-width: 1076px) {
-  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h5 {
+  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h3 {
     font-size: 1rem !important;
   }
-  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h6 {
+  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h4 {
     font-size: 0.8rem !important;
   }
 }
 @media screen and (max-width: 930px) {
-  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h5 {
+  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h3 {
     font-size: 0.8rem !important;
   }
-  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h6 {
+  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h4 {
     font-size: 0.6rem !important;
   }
 }
 @media screen and (max-width: 799px) {
-  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h6 {
+  footer div.footer__desktop.d-flex.align-items-center.justify-content-evenly h4 {
     font-size: 0.49rem !important;
   }
 }
@@ -278,8 +286,8 @@ footer div.footer__responsive {
   footer div.footer__responsive div.footer__responsive__carrito {
     background-color: #f112bd;
   }
-  footer div.footer__responsive div.footer__responsive__carrito h5 {
-    color: #fffeff;
+  footer div.footer__responsive div.footer__responsive__carrito h3 {
+    color: white !important;
     margin-bottom: 0px !important;
   }
   footer div.footer__responsive div.footer__responsive__carrito i.fa-solid.fa-cart-arrow-down {
@@ -355,8 +363,12 @@ main div.container-fluid section.reacciones video {
 
 /*Fin Nosotros */
 /* Carrito */
-main div.container-fluid section.carrito div.page-header.my-3 div.padreCarrito div.padreCarrito__inputs h6 {
+main div.container-fluid section.carrito div.page-header.my-3 div.padreCarrito div.padreCarrito__inputs h5 {
   margin-bottom: 0px !important;
+}
+main div.container-fluid section.carrito div.page-header.my-3 div.padreCarrito div.padreCarrito__inputs h2 {
+  margin-bottom: 0px !important;
+  font-size: 1rem;
 }
 main div.container-fluid section.carrito div.page-header.my-3 div.padreCarrito div.padreCarrito__inputs div.carrito__inputs {
   background-color: rgba(245, 167, 193, 0.1803921569) !important;
@@ -369,8 +381,12 @@ main div.container-fluid section.carrito div.page-header.my-3 section.direccion 
 main div.container-fluid section.carrito section.direccion div.direccion__padre {
   background-color: rgba(245, 167, 193, 0.1803921569);
 }
-main div.container-fluid section.carrito section.direccion div.direccion__padre h6 {
+main div.container-fluid section.carrito section.direccion div.direccion__padre h5 {
   margin-bottom: 0px !important;
+}
+main div.container-fluid section.carrito section.direccion div.direccion__padre h2 {
+  margin-bottom: 0px !important;
+  font-size: 1rem;
 }
 main div.container-fluid section.formulario div.page-header.mx-2.carrito__lista {
   background-color: rgba(245, 167, 193, 0.1803921569);
@@ -379,6 +395,13 @@ main div.container-fluid section.formulario div.page-header.mx-2.carrito__lista 
 }
 main div.container-fluid section.formulario div.carrito__buttonLista.d-flex.justify-content-end {
   display: none !important;
+}
+main div.container-fluid section.formulario h3 {
+  font-size: 1.25rem !important;
+  color: #f112bd !important;
+}
+main div.container-fluid section.formulario h5 {
+  font-size: 1rem !important;
 }
 
 /*Fin Carrito */
@@ -393,12 +416,16 @@ main div.container-fluid section.formulario div.carrito__buttonLista.d-flex.just
   }
 }
 @media screen and (max-width: 630px) {
-  main div.container-fluid section.carrito div.page-header.my-3 div.padreCarrito div.padreCarrito__inputs h6 {
+  main div.container-fluid section.carrito div.page-header.my-3 div.padreCarrito div.padreCarrito__inputs h5 {
     font-size: 0.8rem;
   }
 }
 /*Fin MediasQuery */
 /* pagina informacion */
+main .formasDePago h3 {
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
 main section.Horarios div.padreHorarios {
   background-color: rgba(245, 167, 193, 0.1803921569);
 }

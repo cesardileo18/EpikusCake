@@ -5,8 +5,12 @@ main{
             div.page-header.my-3{
                 div.padreCarrito{
                     div.padreCarrito__inputs{
-                        h6{
+                        h5{
                             margin-bottom: 0px !important;
+                        }
+                        h2{
+                            margin-bottom: 0px !important;
+                            font-size: 1rem;
                         }
                         div.carrito__inputs{
                             background-color: #f5a7c12e !important;
@@ -24,8 +28,12 @@ main{
             section.direccion{
                 div.direccion__padre{
                     background-color: #f5a7c12e;
-                    h6{
+                    h5{
                         margin-bottom: 0px !important;
+                    }
+                    h2{
+                        margin-bottom: 0px !important;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -38,6 +46,13 @@ main{
             }
             div.carrito__buttonLista.d-flex.justify-content-end{
                 display: none !important;
+            }
+            h3{
+                font-size: 1.25rem !important ;
+                color: #f112bd !important
+            }
+            h5{
+                font-size: 1rem !important ;
             }
         }
     }
@@ -69,7 +84,7 @@ main{
                 div.page-header.my-3{
                     div.padreCarrito{
                         div.padreCarrito__inputs{
-                            h6{
+                            h5{
                                 font-size: 0.8rem;
                             }
                         } 
